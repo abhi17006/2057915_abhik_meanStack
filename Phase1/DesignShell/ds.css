@@ -1,0 +1,67 @@
+header {
+    border-style: solid;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    color: dodgerblue;
+}
+
+p{
+    color: lightcoral;
+    font-family: cursive;
+    font-style: italic;
+    border-style:hidden;
+    background-color: lightgrey;
+   
+}
+
+.clickLink {
+    border-style: solid;
+    text-align: center;
+    
+    }
+    a{
+        display: inline-block;
+        padding: 8px;
+        color: saddlebrown;
+    }
+
+.cityList {
+    margin: 25px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 350px;
+}
+   
+.cityList:hover {
+    border: 1px solid #777;
+  }
+  
+  .cityList img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .dest {
+    padding: 20px;
+    text-align: center;
+    color: teal;
+    font-size:large;
+  }
+.footer{
+    border-style: solid;
+    margin-top: 20px;
+
+}
+
+h4 {
+    color: indianred;
+}
+
+label{
+    color: deepskyblue;
+    font-style: oblique;
+}
