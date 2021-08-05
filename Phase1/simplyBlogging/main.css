@@ -1,0 +1,55 @@
+
+.nav-item{
+    color: dodgerblue;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    color: chocolate;
+    text-align: center;
+}
+.col-1 label{
+    color:rgb(27, 13, 110);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    color: lightcoral;
+    font-family: cursive;
+    font-style: italic;
+    border-style:hidden;
+    background-color: lightgrey;
+   
+   
+}
+
+h3{
+    color: rgb(89, 42, 165);
+    
+}
+
+.footer{
+    border-style: solid;
+    margin-top: 25px;
+
+}
+
+h4 {
+    color: indianred;
+}
+
+label{
+    color: deepskyblue;
+    font-style: oblique;
+}
+
+.grid{
+    border: blue solid 1px;
+}
+
+
+
