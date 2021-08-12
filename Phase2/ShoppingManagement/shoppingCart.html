@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
+    <link rel="stylesheet" href="main.css">
+    <title>ShopppingCart</title>
+    <script src="cart.js"></script>
+
+</head>
+<body>
+
+<!-- Header part-->
+<header>
+    <h2>Shoppping Cart</h2> 
+</header>
+    <!--navigation bar-->
+            <div class="d-flex justify-content-start">
+                 <p id="size">Cart Size::  </p>
+                <p id="value">  </p>
+            </div>
+            
+            
+          <!--for checkout--> 
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-primary" href="checkOut.html" role="button">Checkout</a>
+          </div>
+
+    
+
+<div class="container overflow-hidden">
+    <div class="p-2 bg-light border">
+    <div class="row gy-5">
+        <div class="col-6">
+          <div class="p-3 border bg-light">
+              
+                <h4>
+                    <label  for="lName" class="form-label">Name:</label>
+                    <!-- <p id=pnameLbl>Mobile</p> -->
+                     <label id="pnameLbl" for="pName" class="form-label">Car</label> 
+                </h4>
+                <h5>
+                    <label for="lPrice" class="form-label">Price:</label>
+                    <label id ="valLbl" for="pValue" class="form-label">$10000</label>
+                </h5>
+                <div class="col">
+                    <img src="https://media.gettyimages.com/photos/generic-modern-car-as-product-shot-picture-id1255788362?k=6&m=1255788362&s=612x612&w=0&h=EBMPqWI1wJg_ysakM5QK9bKObq-JU3FM7WHBAGue17w=" alt="car" style="width: 340px; height: 250px;"></a>
+                  
+                    
+                </div>
+               <!-- <div class="col">-->
+                    <input class="btn btn-primary" type="button" value="Add" id="btnName" onclick=" addData('Car',10000)">
+              
+            </div>
+        </div>
+
+
+        <div class="col-6">
+            <div class="p-3 border bg-light">
+              
+                  <h4>
+                      <label for="lName" class="form-label">Name:</label>
+                      <label id="pnameLbl" for="pName" class="form-label">Scooter</label>
+                  <h5>
+                      <label for="lPrice" class="form-label">Price:</label>
+                      <label id ="valLbl" for="pValue" class="form-label">$500</label>
+                  </h5>
+
+                  <div class="col">
+                    <img src="https://media.gettyimages.com/photos/fire-hydrant-on-street-in-city-picture-id1171883212?k=6&m=1171883212&s=612x612&w=0&h=xznAgCQG4rbvHmehmn3G4tmaDaCrpjW0N0jxjfPzmxg=" alt="Scooter" style="width: 340px; height: 250px;">
+                  </div>
+                 
+                      <input class="btn btn-primary" type="button" value="Add" id="btnName" onclick="addData('Scooter',500)">
+                
+              </div>
+          </div>
+
+          <div class="col-6">
+            <div class="p-3 border bg-light">
+               
+                  <h4>
+                      <label for="lName" class="form-label">Name:</label>
+                      <label id="pnameLbl" for="pName" class="form-label">Bike</label>
+                  </h4>
+                  <h5>
+                      <label for="lPrice" class="form-label">Price:</label>
+                      <label id ="valLbl" for="pValue" class="form-label">$2000</label>
+                  </h5>
+
+                  <div class="col">
+                    <img src="http://www.driverknowledgetests.com/resources/wp-content/uploads/2014/08/hyosung-gtr-motorbike.jpg" alt="MotorBike" style="width: 340px; height: 250px;">
+                  </div>
+                  
+                      <input class="btn btn-primary" type="button" value="Add" id="btnName" onclick="addData('MotorBike',2000)">
+               
+              </div>
+          </div>
+
+
+          <div class="col-6">
+            <div class="p-3 border bg-light">
+               
+                  <h4>
+                      <label for="lName" class="form-label">Name:</label>
+                      <label id="pnameLbl" for="pName" class="form-label">Hoverboard</label>
+                  </h4>
+                  <h5>
+                      <label for="lPrice" class="form-label">Price:</label>
+                      <label id ="valLbl" for="pValue" class="form-label">$200</label>
+                  </h5>
+                  <div class="col">
+                    <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAU7enxxBG-pXwAnsovd_Uc0sBNU3o_pRuTA&usqp=CAU" alt="Hoverboard" style="width: 340px; height: 250px;">
+                  </div>
+                 
+                      <input class="btn btn-primary" type="button" value="Add" id="btnName" onclick="addData('Hoverboard',200)">
+                 
+              </div>
+          </div>
+
+
+    </div>
+    </div>
+</div>
+       
+<br/>
+<p id="outputData"></p>

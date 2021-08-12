@@ -1,0 +1,22 @@
+h2{
+    color: darkblue;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#size{
+    font-size: larger;
+    font-weight: bold;
+    }
+h4{
+    color: rebeccapurple;
+    
+    font-size: large;
+}
+
+#value{
+    font-size: larger;
+}
+body{
+    background-color:cornsilk;
+}
