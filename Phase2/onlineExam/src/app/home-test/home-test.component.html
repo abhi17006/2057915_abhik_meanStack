@@ -1,0 +1,32 @@
+<div>
+    <h1>Home-Test </h1>
+
+
+        <form #testRef="ngForm" (ngSubmit)="testSubmit(testRef)">
+        <div *ngFor="let q of testArr; let i = index">
+            <p>Question{{i+1}}</p>
+            <p>{{q.question}}</p>
+
+            <input type="radio" name={{q.question}} value={{q.A}} ngModel/> {{q.A}} <br/>
+            <input type="radio" name={{q.question}} value={{q.B}} ngModel/> {{q.B}} <br/>
+            <input type="radio" name={{q.question}} value={{q.C}} ngModel/> {{q.C}} <br/>
+            <input type="radio" name={{q.question}} value={{q.D}} ngModel/> {{q.D}} <br/>
+
+            <div style="color: green;" *ngIf="checkForTrue(i)">The selected answer was correct!</div>
+            <div style="color: red;" *ngIf="checkForFalse(i)">The selected answer was incorrect! The correct answer was "{{q.ans}}".</div><br/>
+       
+           <br/>
+
+        
+        </div>
+        <input type="submit" color="primary" value="Submit" > 
+     </form> 
+     <br/>
+     <div *ngIf="showResults">
+        <div *ngIf="pass" style="color: green;">Result {{counter}}/10: Pass</div>
+        <div *ngIf="fail" style="color: red;">Result {{counter}}/10: Fail</div>
+    </div>
+    
+   
+
+</div>

@@ -1,0 +1,15 @@
+[
+
+{"question":"1+2", "A":"3", "B":"2", "C":"4", "D":"5",  "ans":"3"},
+{"question":"0+0", "A":"1", "B":"0", "C":"14", "D":"24",  "ans":"0"},
+{"question":"0+5", "A":"5", "B":"10", "C":"34", "D":"41",  "ans":"5"},
+{"question":"A packet of information that travels between a browser and the web server is known as", "A":"Malware", "B":"Adware", "C":"Spyware", "D":"Cookie",  "ans":"Cookie"},
+{"question":"The device used by Banks to automatically read those special numbers on the bottom of cheques is", "A":"MICR", "B":"OMR", "C":"UPC", "D":"UDIC",  "ans":"MICR"},
+{"question":"When a computer suddenly stops working, it is said to be", "A":"Crashed", "B":"Bugged", "C":"Hanged", "D":"Held up",  "ans":"Hanged"},
+{"question":"Magnetic disc is an example of", "A":"Online storage", "B":"Offline storage", "C":"Offset storage", "D":"None",  "ans":"Offline storage"},
+{"question":"100*0", "A":"11", "B":"0", "C":"24", "D":"40",  "ans":"0"},
+{"question":"100*50", "A":"11", "B":"5000", "C":"24", "D":"40",  "ans":"5000"},
+{"question":"0*0", "A":"11", "B":"0", "C":"24", "D":"40",  "ans":"0"}
+
+
+]
