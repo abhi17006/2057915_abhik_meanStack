@@ -7,8 +7,6 @@ let app = express();
 let http = require("http").Server(app);
 
 //load the socket.io module and connect http module
-//with IIFE features
-
 let io = require('socket.io')(http);
 
 app.get("/", (req,res)=>{
@@ -21,6 +19,9 @@ var i =0;
 io.on("connection", (socket)=>{
     console.log("client connected");
     socket.emit("serRes","Welcome to the Server World!");
+    socket.on("msgUser", (msg)=>{
+        socket.emit('uMsg', msg);
+    });
     socket.on("msgVar", (msg)=>{
         console.log(msg);
         //Send message to everyone
