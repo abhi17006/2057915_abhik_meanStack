@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <!-- connectiong library-->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <style>
+        #msgList { list-style-type: none; margin: 0; padding: 0; }
+        #msgList > li { padding: 0.5rem 1rem; }
+        #msgList > li:nth-child(odd) { background: rgb(179, 224, 241); }
+
+    </style>
+
+</head>
+<body>
+    
+        <label>Name:</label>
+        <input type="text" name="uname" id="uname" /> <br/>
+        <label>Message:</label>
+        <textarea name="msgBx" id="msgBx" cols="30" rows="10"></textarea> <br/>
+        <input type="button" value="Send" onclick="sendMsg()" />
+    
+   
+    <br/>
+  
+    <div id="idResWel"></div>
+    <!-- <div id="idResWel1"></div> -->
+    <!-- <div id="idRes"></div> -->
+    <ul id="msgList"></ul>
+
+   
+    <script>
+        var flag = true;
+        var socket = io();
+        var msgList = document.getElementById('msgList')
+        sendMsg = ()=>{
+            var user =document.getElementById('uname').value;
+            var msg = document.getElementById('msgBx').value;
+            if(msg){
+                socket.emit('msgVar',{msgUser: user, msgVar:msg})
+            } 
+        }      
+        socket.on('newMsg', (newData)=>{
+            //check for server responses
+            console.log(newData)
+            var item = document.createElement('li');
+            item.textContent = newData;
+            msgList.appendChild(item);
+                // document.getElementById('idResWel1').innerHTML += '<div><b>' + newData + '</b> <div>';
+        });
+
+        //array data response
+        socket.on("serRes1", (data)=>{ 
+            console.log(data);    
+            var item = document.createElement('li');
+            item.textContent = data;
+            msgList.appendChild(item);      
+                
+        });
+                
+ 
+        if (flag){
+            //welcome response
+            socket.on("serRes", (MsgVarRes)=>{
+                document.getElementById('idResWel').innerHTML += '<div><b>' + MsgVarRes + '</b> <div>';
+                flag = false;
+            });  
+        }    
+     </script>
+</body>
+</html>
